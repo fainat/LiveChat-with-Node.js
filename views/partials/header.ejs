@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <script src="/jquery/jquery.js"></script>
+</head>
+<body>
+<nav class="navbar bg-dark navbar-expand-lg position-fixed w-100">
+    <div class="navbar-brand">
+        Live Chat
+    </div>
+    <div class="navbar-collapse">
+        <div class="nav mr-auto">
+            <div class="nav-link">Welcome LiveChat</div>
+            <div class="nav-link">
+                Join our community
+                <a href="https://github.com/fainat" class="text-light">
+                    Github
+                </a>
+            </div>
+            <% if (auth) {%>
+                <div class="nav-link ml-5 d-flex">
+                    <a href="/" class="text-light pr-3">
+                        logout
+                    </a>
+                    <p>lats authorize other account</p>
+                </div>
+            <%} else {%>
+                <div class="nav-link ml-5 d-flex">
+                    <a href="/auth" class="text-light pr-3">
+                        join message
+                    </a>
+                    <p>join message</p>
+                </div>
+            <%}%>
+        </div>
+    </div>
+</nav>
+<div class="p-3"></div>

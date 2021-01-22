@@ -1,0 +1,28 @@
+<%- include('partials/header'); -%>
+<div class="container pt-5">
+    <div class="p-5">
+        <form class="form-signin w-75" action="/auth" method="POST">
+            <div class="text-center mb-4">
+                <h1 class="h3 mb-3 font-weight-normal">Login Or Register</h1>
+                <p>Enter your username or email address, then continue live chat</p>
+            </div>
+            <div class="form-label-group">
+                <input name="username" type="text" id="username" class="form-control" placeholder="Username or address" required="" autofocus="">
+                <label for="inputEmail">Email address</label>
+            </div>
+
+            <div class="form-label-group">
+                <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                <label for="inputPassword">Password</label>
+            </div>
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted text-center">© 2021</p>
+        </form>
+    </div>
+</div>

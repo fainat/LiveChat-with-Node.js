@@ -1,0 +1,20 @@
+</div>
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+    <% if (auth) {%>
+    <form action=<%=`/auth/${auth}`%> method="POST" class="w-100">
+        <div class="input-group d-flex align-items-center justify-content-between">
+            <input name="message" type="text" class="form-control w-75 pl-5">
+            <button class="btn btn-primary">
+                send
+            </button>
+        </div>
+    </form>
+    <%} else {%>
+        <h5 class="text-light">
+            please login, for send message
+            <a href="/auth" class="text-muted">login here</a>
+        </h5>
+    <%}%>
+</nav>
+</body>
+</html>
